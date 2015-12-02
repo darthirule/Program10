@@ -11,17 +11,24 @@
  */
 package program10;
 
-/**
- *
- * @author Sean
- */
+import java.util.GregorianCalendar;
+
+
 public class Program10 {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
-        // TODO code application logic here
+      
+        int year, month, day;
+        
+        GregorianCalendar cal = new GregorianCalendar();
+        
+        year = cal.get(GregorianCalendar.YEAR) + 1; //I am assuming January is month 0?
+        month = cal.get(GregorianCalendar.MONTH);
+        day = cal.get(GregorianCalendar.DAY_OF_MONTH);
+        
+        System.out.println("The current date is: " + month + ":" + day + ":" + year);
+        
     }
     
 }
