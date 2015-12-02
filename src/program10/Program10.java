@@ -29,6 +29,15 @@ public class Program10 {
         
         System.out.println("The current date is: " + month + ":" + day + ":" + year);
         
+        cal.setTimeInMillis(1234567898765L);
+        
+        year = cal.get(GregorianCalendar.YEAR) + 1; 
+        month = cal.get(GregorianCalendar.MONTH);
+        day = cal.get(GregorianCalendar.DAY_OF_MONTH);
+        
+        System.out.println("The current date is: " + month + ":" + day + ":" + year);
+        
+        
     }
     
 }
